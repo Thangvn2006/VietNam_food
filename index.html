@@ -11,20 +11,69 @@
             margin: 0;
         }
 
+        /* Skip link styling (optional improvement for accessibility) */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
         header {
-            background-color: #f0f8ff; /* ✔ Hex color for header background */
+            background-color: #f0f8ff;
             padding: 20px 0;
         }
 
         h1 {
             text-align: center;
-            color: #2e8b57; /* ✔ New text color */
+            color: #2e8b57;
         }
 
-        main {
-            background-color: #fdfdfd; /* ✔ Section background using hex */
+        nav {
+            display: inline-block;
+            width: 80%;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        nav img {
+            width: 10%;
+        }
+
+        /* Commenting out the default li styling */
+        /* li {
+            list-style: none;
+        } */
+
+        main#main-content {
+            background-color: #fdfdfd;
             padding: 20px;
             border-radius: 12px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: space-between;
+            align-items: start;
+            row-gap: 30px;
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         .food-container {
@@ -89,10 +138,21 @@
     </style>
 </head>
 <body>
+
+<!-- Skip to Main Content Link -->
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+
 <header>
   <h1>🍜 Các món ăn ngon ở Việt Nam 🇻🇳</h1>
 </header>
-<main>
+
+<!-- Example nav for styling -->
+<nav>
+  <img src="logo.png" alt="Logo">
+  <!-- Navigation links can go here -->
+</nav>
+
+<main id="main-content">
     <div class="food-container">
 
         <div class="food-item">
@@ -122,10 +182,9 @@
             </div>
         </div>
 
-        <!-- Bạn có thể thêm các món khác tương tự ở đây -->
-
     </div>
 </main>
+
 <footer>
   <p>© 2025 Ẩm thực Việt Nam | Make by Thangvn</p>
 </footer>
