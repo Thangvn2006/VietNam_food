@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Trang chủ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ẩm Thực Việt Nam - Trang chủ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Bỏ qua nội dung chính</a>
-<nav>
-  <a href="index.html">Trang chủ</a>
-  <a href="food.html">Món ăn</a>
-  <a href="about.html">Giới thiệu</a>
-</nav>
+  <a class="skip-link" href="#main">Bỏ qua nội dung chính</a>
 
-<main id="main" class="home">
-  <h1>Chào mừng đến với Ẩm Thực Việt Nam</h1>
-  <p>Khám phá những món ăn truyền thống đặc sắc, mang đậm bản sắc văn hoá Việt.</p>
-  <img src="image/am_thuc_viet_nam.webp" alt="Bánh mì Việt Nam" class="main-image">
-</main>
+  <header class="container">
+    <nav aria-label="Chính">
+      <a href="index.html" aria-current="page">Trang chủ</a>
+      <a href="food.html">Món ăn</a>
+      <a href="about.html">Giới thiệu</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Chào mừng đến với Ẩm Thực Việt Nam</h1>
+        <p>Khám phá hương vị truyền thống: từ phở thanh nồng, bún bò Huế cay nồng đến bánh mì giòn rụm. Hãy bắt đầu hành trình ẩm thực!</p>
+      </div>
+
+      <img src="image/am_thuc_viet_nam.webp" alt="Ẩm thực Việt Nam" class="main-image">
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2025 Ẩm Thực Việt Nam</p>
+  </footer>
 </body>
 </html>
+
