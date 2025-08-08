@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Các Món Ăn Ngon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Các Món Ăn Ngon - Ẩm Thực Việt Nam</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Bỏ qua nội dung chính</a>
-<nav>
-  <a href="index.html">Trang chủ</a>
-  <a href="food.html">Món ăn</a>
-  <a href="about.html">Giới thiệu</a>
-</nav>
+  <a class="skip-link" href="#main">Bỏ qua nội dung chính</a>
 
-<main id="main">
-  <h1>Các món ăn truyền thống Việt Nam</h1>
-  <div class="grid-gallery">
-    <div>
-      <img src="image/pho.jpg" alt="Phở">
-      <h2>Phở</h2>
-      <p>Nước dùng thanh, thơm từ xương bò, bánh phở mềm, thêm chút hành lá và rau thơm. Ăn cùng thịt bò tái hoặc chín.</p>
-    </div>
+  <header class="container">
+    <nav aria-label="Chính">
+      <a href="index.html">Trang chủ</a>
+      <a href="food.html" aria-current="page">Món ăn</a>
+      <a href="about.html">Giới thiệu</a>
+    </nav>
+  </header>
 
-    <div>
-      <img src="image/bun_cha.jpg" alt="Bún chả">
-      <h2>Bún chả</h2>
-      <p>Thịt heo nướng thơm lừng ăn với bún tươi và nước mắm pha tỏi ớt. Kèm rau sống tươi mát.</p>
-    </div>
+  <main id="main" class="container">
+    <h1>Các món ăn truyền thống Việt Nam</h1>
 
-    <div>
-      <img src="image/banh_mi.jpg" alt="Bánh mì">
-      <h2>Bánh mì</h2>
-      <p>Ổ bánh mì giòn rụm với nhân đa dạng: chả lụa, thịt nướng, pate, trứng ốp la... Ăn nhanh, tiện lợi mà vẫn ngon tuyệt.</p>
-    </div>
+    <div class="grid-gallery" aria-live="polite">
+      <div>
+        <img src="images/pho.jpg" alt="Phở - nước dùng hầm xương, bánh phở">
+        <h2>Phở</h2>
+        <p>Phở có nước dùng thanh, bánh phở mềm và lá húng quế, chanh, ớt kèm theo.</p>
+      </div>
 
-    <div>
-      <img src="image/bun_bo_hue.jpg" alt="Bún bò Huế">
-      <h2>Bún bò Huế</h2>
-      <p>Đặc sản Huế với nước dùng cay nồng, hương sả đặc trưng, thịt bò và giò heo đầy đặn.</p>
-    </div>
+      <div>
+        <img src="images/bun_cha.jpg" alt="Bún chả Hà Nội">
+        <h2>Bún chả</h2>
+        <p>Thịt nướng thơm ăn cùng bún tươi, nước mắm pha chua ngọt và rau sống.</p>
+      </div>
 
-    <div>
-      <img src="image/bun_thang.jpg" alt="Bún thang">
-      <h2>Bún thang</h2>
-      <p>Món ăn cầu kỳ với trứng chiên sợi, thịt gà xé, giò và nước dùng trong thanh.</p>
-    </div>
+      <div>
+        <img src="images/banh_mi.jpg" alt="Bánh mì - ổ giòn nhân phong phú">
+        <h2>Bánh mì</h2>
+        <p>Ổ bánh mì giòn, nhân pate, thịt, dưa leo, rau thơm — biểu tượng ẩm thực đường phố.</p>
+      </div>
 
-    <div>
-      <img src="image/bun_rieu_cua.webp" alt="Bún riêu cua">
-      <h2>Bún riêu cua</h2>
-      <p>Nước riêu cua đỏ au, thêm đậu phụ, cà chua, hành phi, đôi khi có chả hoặc ốc.</p>
-    </div>
+      <div>
+        <img src="images/bun_bo_hue.jpg" alt="Bún bò Huế">
+        <h2>Bún bò Huế</h2>
+        <p>Nước dùng đậm đà, sả, giò heo và miếng thịt mềm — vị miền Trung thơm cay.</p>
+      </div>
 
-    <div>
-      <img src="image/xoi_xeo.jpg" alt="Xôi xéo">
-      <h2>Xôi xéo</h2>
-      <p>Xôi nếp dẻo phủ đậu xanh nghiền, hành phi giòn và mỡ hành thơm béo.</p>
-    </div>
+      <div>
+        <img src="images/bun_thang.jpg" alt="Bún thang Hà Nội">
+        <h2>Bún thang</h2>
+        <p>Món bún thanh nhã với thịt gà xé, trứng thái sợi, giò và nước dùng trong.</p>
+      </div>
 
-    <div>
-      <img src="image/cha_ca_la_vong.jpg" alt="Chả cá Lã Vọng">
-      <h2>Chả cá Lã Vọng</h2>
-      <p>Cá được ướp nghệ rồi chiên, ăn nóng với thì là, rau thơm, bún và mắm tôm.</p>
+      <div>
+        <img src="images/bun_rieu_cua.jpg" alt="Bún riêu cua">
+        <h2>Bún riêu cua</h2>
+        <p>Riêu cua đậm, cà chua, đậu phụ, hành phi — hương vị dân dã khó quên.</p>
+      </div>
+
+      <div>
+        <img src="images/xoi_xeo.jpg" alt="Xôi xéo">
+        <h2>Xôi xéo</h2>
+        <p>Xôi dẻo phủ đậu xanh nghiền, hành phi và mỡ hành — món ăn sáng truyền thống.</p>
+      </div>
+
+      <div>
+        <img src="images/cha_ca_la_vong.jpg" alt="Chả cá Lã Vọng">
+        <h2>Chả cá Lã Vọng</h2>
+        <p>Cá ướp nghệ, chiên thơm, ăn với thì là, bún và mắm tôm — đặc sản Hà Nội.</p>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
+
+  <footer class="container">
+    <p>Được viết bởi Thangvn</p>
+  </footer>
 </body>
 </html>
