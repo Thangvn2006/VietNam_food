@@ -186,3 +186,25 @@ footer {
     text-align: center;
   }
 }
+@media (min-width: 772px) {
+  .grid-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .grid-gallery div {
+    width: 45vw;
+  }
+
+  .grid-gallery img {
+    max-height: 30vh;
+    height: auto;
+  }
+}
+@media (min-width: 998px) {
+  .grid-gallery div {
+    width: 30vw;
+  }
+}
